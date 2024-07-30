@@ -1,0 +1,35 @@
+name: Update GitHub Page
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Runs every week
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch repositories
+        run: python scripts/fetch_repos.py
+
+      - name: Generate HTML page
+        run: python scripts/generate_page.py
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+
