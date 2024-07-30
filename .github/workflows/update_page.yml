@@ -22,14 +22,14 @@ jobs:
           python-version: 3.x
 
       - name: Install dependencies
-        run: pip install requests openai==0.28
+        run: pip install requests
 
       - name: Fetch repositories
         run: python scripts/fetch_repos.py
 
       - name: Generate HTML page
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GROQ_KEY: ${{ secrets.GROQ_KEY }}
         run: python scripts/generate_page.py
 
       - name: Deploy to GitHub Pages
