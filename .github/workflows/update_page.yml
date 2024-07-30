@@ -13,21 +13,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Install Git
+        run: sudo apt-get update && sudo apt-get install -y git
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: 3.x
 
-      - name: Install Git
-        run: sudo apt-get update && sudo apt-get install -y git
-
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests openai
 
       - name: Fetch repositories
         run: python scripts/fetch_repos.py
 
       - name: Generate HTML page
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python scripts/generate_page.py
 
       - name: Deploy to GitHub Pages
