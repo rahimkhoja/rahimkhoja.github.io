@@ -1,7 +1,7 @@
 import requests
 
 # List of GitHub usernames
-usernames = ["username1", "username2", "username3"]
+usernames = ["rahimkhoja", "ImprobabilityLabs"]
 
 # Get repos for each user
 def get_repos(username):
