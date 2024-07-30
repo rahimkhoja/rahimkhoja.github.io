@@ -1,5 +1,6 @@
 import requests
 import os
+import time
 from html.parser import HTMLParser
 
 # Set your GroqCloud API key
@@ -109,6 +110,9 @@ for item in repo_items:
         # Get formatted HTML from GroqCloud
         formatted_html = format_repo_with_groq(repo)
         formatted_repos += f"<div class='repo'>{formatted_html}</div>\n"
+
+        # Pause for 15 seconds
+        time.sleep(15)
 
 with open("docs/index.html", "r") as f:
     html_template = f.read()
