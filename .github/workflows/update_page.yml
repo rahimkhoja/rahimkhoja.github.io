@@ -22,7 +22,7 @@ jobs:
           python-version: 3.x
 
       - name: Install dependencies
-        run: pip install requests yaml
+        run: pip install requests && pip install pyyaml
 
       - name: Fetch repositories
         run: python scripts/fetch_repos.py
