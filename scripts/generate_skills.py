@@ -55,7 +55,7 @@ def generate_html(skills):
         f.write(html)
 
 if __name__ == "__main__":
-    with open("details.json", "r") as stream:
+    with open("scripts/details.json", "r") as stream:
         skills_data = yaml.safe_load(stream)['skills']
     generate_html(skills_data)
 
