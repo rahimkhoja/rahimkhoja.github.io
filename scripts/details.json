@@ -1,0 +1,91 @@
+personal_info:
+  name: Rahim Khoja
+  email: rahim@example.com
+  linkedin: https://www.linkedin.com/in/rahimkhoja
+  stackoverflow: https://stackoverflow.com/users/rahimkhoja
+  github: https://github.com/rahimkhoja
+
+skills:
+  programming_languages:
+    - name: Python
+      link: https://www.python.org/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/python.svg
+    - name: C
+      link: https://www.cprogramming.com/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/c.svg
+    - name: JavaScript
+      link: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/javascript.svg
+
+  operating_systems:
+    - name: Linux
+      link: https://www.linux.org/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linux.svg
+    - name: Ubuntu
+      link: https://ubuntu.com/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/ubuntu.svg
+    - name: CentOS
+      link: https://www.centos.org/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/centos.svg
+
+  infrastructure_and_cloud_technologies:
+    - name: Docker
+      link: https://www.docker.com/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/docker.svg
+    - name: Kubernetes
+      link: https://kubernetes.io/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/kubernetes.svg
+    - name: Amazon Web Services (AWS)
+      link: https://aws.amazon.com/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/amazonaws.svg
+
+  libraries_and_frameworks:
+    - name: Flask
+      link: https://flask.palletsprojects.com/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/flask.svg
+    - name: NumPy
+      link: https://numpy.org/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/numpy.svg
+    - name: Pandas
+      link: https://pandas.pydata.org/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/pandas.svg
+    - name: TensorFlow
+      link: https://www.tensorflow.org/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/tensorflow.svg
+
+  devops_and_tools:
+    - name: GitHub
+      link: https://github.com/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg
+    - name: Jenkins
+      link: https://www.jenkins.io/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/jenkins.svg
+    - name: Ansible
+      link: https://www.ansible.com/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/ansible.svg
+
+  databases:
+    - name: MySQL
+      link: https://www.mysql.com/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/mysql.svg
+    - name: PostgreSQL
+      link: https://www.postgresql.org/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/postgresql.svg
+    - name: MongoDB
+      link: https://www.mongodb.com/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/mongodb.svg
+
+projects:
+  - name: The Quant
+    description: AI-driven stock analysis tool that allows users to analyze stock performance and predict trading opportunities.
+    link: https://quant.improbability.io/
+  - name: SMS AI Assistant
+    description: An SMS-based AI assistant that looks up data from Google and answers user queries with relevant links.
+    link: https://improbability.io/sms-ai-assistant
+  - name: Jupyter Notebook - Crypto Trade Finder
+    description: A tool to analyze cryptocurrency trading data using Jupyter notebooks.
+    link: https://github.com/rahimkhoja/crypto-trade-finder
+
+resume:
+  file_name: rahim_khoja_resume.pdf
+  link: /resume/rahim_khoja_resume.pdf
