@@ -27,12 +27,27 @@ skills:
     - name: Python
       link: https://www.python.org/
       icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/python.svg
+    - name: Java
+      link: https://www.java.com/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/java.svg
     - name: C
       link: https://www.cprogramming.com/
       icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/c.svg
     - name: JavaScript
       link: https://developer.mozilla.org/en-US/docs/Web/JavaScript
       icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/javascript.svg
+    - name: PHP
+      link: https://www.php.net/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/php.svg
+    - name: C++
+      link: https://isocpp.org/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/cplusplus.svg
+    - name: Node.js
+      link: https://nodejs.org/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/nodedotjs.svg
+    - name: Bash
+      link: https://www.gnu.org/software/bash/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gnubash.svg
 
   operating_systems:
     - name: Linux
@@ -41,9 +56,42 @@ skills:
     - name: Ubuntu
       link: https://ubuntu.com/
       icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/ubuntu.svg
+    - name: Debian
+      link: https://www.debian.org/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/debian.svg
+    - name: Red Hat
+      link: https://www.redhat.com/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/redhat.svg
     - name: CentOS
       link: https://www.centos.org/
       icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/centos.svg
+    - name: Arch Linux
+      link: https://archlinux.org/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/archlinux.svg
+    - name: Gentoo
+      link: https://www.gentoo.org/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gentoo.svg
+    - name: Rocky Linux
+      link: https://rockylinux.org/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/rockylinux.svg
+    - name: Slackware
+      link: http://www.slackware.com/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/slackware.svg
+    - name: Windows 
+      link: https://www.microsoft.com/en-us/windows/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/windows.svg
+    - name: FreeBSD
+      link: https://www.freebsd.org/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/freebsd.svg
+    - name: AmigaOS
+      link: http://www.amigaos.net/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/amigaos.svg
+    - name: SGI IRIX
+      link: https://en.wikipedia.org/wiki/IRIX
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/sgi.svg
+    - name: Solaris
+      link: https://www.oracle.com/solaris/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/solaris.svg
 
   infrastructure_and_cloud_technologies:
     - name: Docker
@@ -55,6 +103,15 @@ skills:
     - name: Amazon Web Services (AWS)
       link: https://aws.amazon.com/
       icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/amazonaws.svg
+    - name: Microsoft Azure
+      link: https://azure.microsoft.com/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/microsoftazure.svg
+    - name: Google Cloud Platform (GCP)
+      link: https://cloud.google.com/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/googlecloud.svg
+    - name: VMware
+      link: https://www.vmware.com/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/vmware.svg
 
   libraries_and_frameworks:
     - name: Flask
@@ -69,17 +126,23 @@ skills:
     - name: TensorFlow
       link: https://www.tensorflow.org/
       icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/tensorflow.svg
+    - name: Matplotlib
+      link: https://matplotlib.org/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/matplotlib.svg
+    - name: Jupyter
+      link: https://jupyter.org/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/jupyter.svg
 
   devops_and_tools:
     - name: GitHub
       link: https://github.com/
       icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg
-    - name: Jenkins
-      link: https://www.jenkins.io/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/jenkins.svg
     - name: Ansible
       link: https://www.ansible.com/
       icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/ansible.svg
+    - name: Terraform
+      link: https://www.terraform.io/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/terraform.svg
 
   databases:
     - name: MySQL
@@ -91,6 +154,18 @@ skills:
     - name: MongoDB
       link: https://www.mongodb.com/
       icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/mongodb.svg
+    - name: MariaDB
+      link: https://mariadb.org/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/mariadb.svg
+    - name: InfluxDB
+      link: https://www.influxdata.com/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/influxdb.svg
+    - name: Prometheus
+      link: https://prometheus.io/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/prometheus.svg
+    - name: ElasticSearch
+      link: https://www.elastic.co/
+      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/elasticsearch.svg
 
 projects:
   - name: The Quant
