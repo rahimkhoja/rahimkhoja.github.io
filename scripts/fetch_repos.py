@@ -86,7 +86,7 @@ for repo in all_repos:
 print(html_output)
 
 # Save repo info to a markdown file
-with open("repos.html", "w") as f:
+with open("docs\repos.html", "w") as f:
     f.write(html_output)
 
 # Save repo info to a markdown file
