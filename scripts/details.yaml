@@ -2,8 +2,9 @@ site_info:
   bing:
   google:
   gtag:
-  keywords:
-  description: 
+  page_title:
+  meta_keywords:
+  page_description: 
 
 personal_info:
   name: Rahim Khoja
