@@ -1,5 +1,18 @@
 import yaml
 
+def remove_lines_containing_text(file_content, text_to_delete):
+    # Split into lines
+    lines = file_content.splitlines()
+    
+    # Filter out lines containing the specific text
+    filtered_content = [line for line in lines if text_to_delete not in line]
+    
+    # Join the filtered lines back into a single string
+    filtered_content_str = "\n".join(filtered_content)
+    
+    return filtered_content_str
+
+
 def generate_html(skills):
     sections = []
     for category, items in skills.items():
@@ -90,26 +103,40 @@ if __name__ == "__main__":
     if email:
         html_template = html_template.replace("<!-- Email -->", email)
 
+    if about:
+        html_template = html_template.replace("<!-- About -->", about)
+
     if linkedin:
         html_template = html_template.replace("<!-- LinkedIn -->", linkedin)
+    else:
+        html_template = remove_lines_containing_text(html_template, "<!-- LinkedIn -->")
 
     if stackoverflow:
         html_template = html_template.replace("<!-- Stack -->", stackoverflow)
-
+    else:
+        html_template = remove_lines_containing_text(html_template, "<!-- LinkedIn -->")
+        
     if github:
         html_template = html_template.replace("<!-- GitHub -->", github)
-
+    else:
+        html_template = remove_lines_containing_text(html_template, "<!-- LinkedIn -->")
+        
     if hackerrank:
         html_template = html_template.replace("<!-- HackerRank -->", hackerrank)
-
+    else:
+        html_template = remove_lines_containing_text(html_template, "<!-- LinkedIn -->")
+        
     if leetcode:
         html_template = html_template.replace("<!-- LeetCode -->", leetcode)
-
+    else:
+        html_template = remove_lines_containing_text(html_template, "<!-- LinkedIn -->")
+    
     if researchgate:
         html_template = html_template.replace("<!-- ResearchGate -->", researchgate)
+    else:
+        html_template = remove_lines_containing_text(html_template, "<!-- LinkedIn -->")
+        
 
-    if about:
-        html_template = html_template.replace("<!-- About -->", about)
 
 
     with open("docs/index2.html", "w") as f:
