@@ -114,27 +114,27 @@ if __name__ == "__main__":
     if stackoverflow:
         html_template = html_template.replace("<!-- Stack -->", stackoverflow)
     else:
-        html_template = remove_lines_containing_text(html_template, "<!-- LinkedIn -->")
+        html_template = remove_lines_containing_text(html_template, "<!-- Stack -->")
         
     if github:
         html_template = html_template.replace("<!-- GitHub -->", github)
     else:
-        html_template = remove_lines_containing_text(html_template, "<!-- LinkedIn -->")
+        html_template = remove_lines_containing_text(html_template, "<!-- GitHub -->")
         
     if hackerrank:
         html_template = html_template.replace("<!-- HackerRank -->", hackerrank)
     else:
-        html_template = remove_lines_containing_text(html_template, "<!-- LinkedIn -->")
+        html_template = remove_lines_containing_text(html_template, "<!-- HackerRank -->")
         
     if leetcode:
         html_template = html_template.replace("<!-- LeetCode -->", leetcode)
     else:
-        html_template = remove_lines_containing_text(html_template, "<!-- LinkedIn -->")
+        html_template = remove_lines_containing_text(html_template, "<!-- LeetCode -->")
     
     if researchgate:
         html_template = html_template.replace("<!-- ResearchGate -->", researchgate)
     else:
-        html_template = remove_lines_containing_text(html_template, "<!-- LinkedIn -->")
+        html_template = remove_lines_containing_text(html_template, "<!-- ResearchGate -->")
         
 
 
