@@ -157,10 +157,7 @@ if __name__ == "__main__":
 
     skills_html = generate_html(skills)
 
-    with open("docs/skills_section.html", "w") as f:
-        f.write(skills_html)
-
-    with open("docs/index2.html", "r") as f:
+    with open("scripts/html-template.html", "r") as f:
         html_template = f.read()
 
     # List of GitHub usernames
