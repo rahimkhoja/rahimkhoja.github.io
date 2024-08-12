@@ -65,6 +65,16 @@ if __name__ == "__main__":
     resume = data['resume']
     projects = data['projects']
 
+    name = personal_info.get('name')
+    email = personal_info.get('email')
+    linkedin = personal_info.get('linkedin')
+    stackoverflow = personal_info.get('stackoverflow')
+    github = personal_info.get('github')
+    hackerrank = personal_info.get('hackerrank')
+    leetcode = personal_info.get('leetcode')
+    researchgate = personal_info.get('researchgate')
+    about = personal_info.get('about')
+
     skills_html = generate_html(skills)
 
     with open("docs/skills_section.html", "w") as f:
@@ -73,7 +83,16 @@ if __name__ == "__main__":
     with open("docs/index2.html", "r") as f:
         html_template = f.read()
 
-    html_content = html_template.replace("<!-- Repositories will be inserted here -->", html)
+    html_template = html_template.replace("<!-- Skills -->", skills_html)
+    html_template = html_template.replace("<!-- Name -->", name)
+    html_template = html_template.replace("<!-- Email -->", email)
+    html_template = html_template.replace("<!-- LinkedIn -->", linkedin)
+    html_template = html_template.replace("<!-- Stack -->", stackoverflow)
+    html_template = html_template.replace("<!-- GitHub -->", github)
+    html_template = html_template.replace("<!-- HackerRank -->", hackerrank)
+    html_template = html_template.replace("<!-- LeetCode -->", leetcode)
+    html_template = html_template.replace("<!-- ResearchGate -->", researchgate)
+    html_template = html_template.replace("<!-- About -->", about)
 
     with open("docs/index2.html", "w") as f:
-        f.write(html_content)
+        f.write(html_template)
