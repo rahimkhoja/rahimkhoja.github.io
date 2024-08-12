@@ -1131,3 +1131,84 @@ section .container {
     transform: translateX(-50%);
   }
 }
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between the tags */
+}
+
+.tag {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border-radius: 20px;
+    position: relative;
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+.tag:before {
+    content: " ";
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #333;
+}
+
+.tag:after {
+    content: "•";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.tag-blue {
+    background-color: #2196F3;
+}
+
+.tag-blue:before {
+    border-right-color: #2196F3;
+}
+
+.tag-green {
+    background-color: #4CAF50;
+}
+
+.tag-green:before {
+    border-right-color: #4CAF50;
+}
+
+.tag-orange {
+    background-color: #FF9800;
+}
+
+.tag-orange:before {
+    border-right-color: #FF9800;
+}
+
+.tag-red {
+    background-color: #F44336;
+}
+
+.tag-red:before {
+    border-right-color: #F44336;
+}
+
+.tag-pink {
+    background-color: #E91E63;
+}
+
+.tag-pink:before {
+    border-right-color: #E91E63;
+}
