@@ -19,7 +19,11 @@ for username in usernames:
                 "name": repo["name"],
                 "html_url": repo["html_url"],
                 "description": repo["description"],
-                "tags": repo["topics"] if "topics" in repo else []
+                "tags": repo["topics"] if "topics" in repo else [],
+                "homepage": repo["homepage"],
+                "stargazers_count": repo["stargazers_count"],
+                "forks_count": repo["forks_count"],
+                "language": repo["language"]
             }
             all_repos.append(repo_info)
 
