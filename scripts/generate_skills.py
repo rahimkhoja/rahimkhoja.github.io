@@ -21,7 +21,7 @@ def generate_repo_html(all_repos):
 
         repo_html = f"""
               <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;">{repo["name"]}</h4>
+                <h4>{repo["name"]}</h4>
                 <p>{repo["description"]}</p>
             
                 <div class="repo-links mt-3">
@@ -170,7 +170,7 @@ if __name__ == "__main__":
         for repo in repos:
             if repo["description"]:  # Skip repos without descriptions
                 repo_info = {
-                    "name": repo["name"],
+                    "name": repo["name"].replace("_", " ").replace("-", " ").title(),
                     "html_url": repo["html_url"],
                     "description": repo["description"],
                     "tags": repo["topics"] if "topics" in repo else [],
