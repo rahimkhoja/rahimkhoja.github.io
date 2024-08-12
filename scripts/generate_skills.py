@@ -61,11 +61,10 @@ def generate_repo_html(all_repos):
     
         html_output += repo_html
 
-		# Print the final HTML output
-        print(html_output)
+    # Print the final HTML output
+    print(html_output)
 
-	return html_output
-
+    return html_output
 
 
 def remove_lines_containing_text(file_content, text_to_delete):
