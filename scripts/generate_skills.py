@@ -50,12 +50,30 @@ def generate_html(skills):
       </div>
     </div>
   </section>"""
+
+    return html 
     
+
+
+if __name__ == "__main__":
+    with open("scripts/details.yaml", "r") as stream:
+        data = yaml.safe_load(stream)
+
+    site_info = data['site_info']
+    personal_info = data['personal_info']
+    skills = data['skills']
+    resume = data['resume']
+    projects = data['projects']
+
+    skills_html = generate_html(skills)
+
     with open("docs/skills_section.html", "w") as f:
         f.write(html)
 
-if __name__ == "__main__":
-    with open("scripts/details.json", "r") as stream:
-        skills_data = yaml.safe_load(stream)['skills']
-    generate_html(skills_data)
+    with open("docs/index2.html", "r") as f:
+        html_template = f.read()
 
+    html_content = html_template.replace("<!-- Repositories will be inserted here -->", html)
+
+    with open("docs/index2.html", "w") as f:
+        f.write(html_content)
