@@ -30,10 +30,10 @@ jobs:
       - name: Generate Skills 
         run: python scripts/generate_skills.py
 
-      - name: Generate HTML page
-        env:
-          GROQ_KEY: ${{ secrets.GROQ_KEY }}
-        run: python scripts/generate_page.py
+ #     - name: Generate HTML page
+ #       env:
+ #         GROQ_KEY: ${{ secrets.GROQ_KEY }}
+ #       run: python scripts/generate_page.py
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
