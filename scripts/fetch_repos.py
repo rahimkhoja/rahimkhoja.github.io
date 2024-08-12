@@ -27,6 +27,68 @@ for username in usernames:
             }
             all_repos.append(repo_info)
 
+
+html_output = ""
+
+color_classes = ["color1", "color2", "color3", "color4", "color5"]
+color_index = 0
+
+for repo in all_repos:
+    tags_html = ""
+    for tag in repo["tags"]:
+        color_class = color_classes[color_index % len(color_classes)]
+        tags_html += f'          <a title="" href="" class="{color_class}">{tag}</a>\n'
+        color_index += 1
+
+    repo_html = f"""
+          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <h4 style="text-align:left;">{repo["name"]}</h4>
+            <p>{repo["description"]}</p>
+            
+            <div class="repo-links mt-3">
+              <div class="github-repo">
+                <strong>Repository:</strong>
+                <a href="{repo["html_url"]}" target="_blank">{repo["html_url"]}</a>
+              </div>
+    """
+    
+    if repo["homepage"]:
+        repo_html += f"""
+              <div class="demo mt-2">
+                <strong>Live Demo:</strong>
+                <a href="{repo["homepage"]}" target="_blank">{repo["homepage"]}</a>
+              </div>
+        """
+    
+    repo_html += f"""
+            </div>
+    
+            <div class="repo-stats mt-3">
+              <span class="mr-3">
+                <i class="bx bx-star"></i> {repo["stargazers_count"]}
+              </span>
+              <span>
+                <i class="bx bx-git-branch"></i> {repo["forks_count"]}
+              </span>
+            </div>
+    
+            <div class="tags mt-3">
+              <p>
+    {tags_html}
+              </p>
+            </div>
+          </div>
+    """
+    
+    html_output += repo_html
+
+# Print the final HTML output
+print(html_output)
+
+# Save repo info to a markdown file
+with open("repos.html", "w") as f:
+    f.write(html_output)
+
 # Save repo info to a markdown file
 with open("repos.md", "w") as f:
     for repo in all_repos:
