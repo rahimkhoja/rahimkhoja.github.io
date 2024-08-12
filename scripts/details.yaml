@@ -14,7 +14,7 @@ personal_info:
   hackerrank: https://www.hackerrank.com/profile/rahim9
   leetcode: https://leetcode.com/u/rahimkhoja/
   researchgate: 
-  about: >-
+  about: |
     A mildly eccentric, but mostly fantastic computer system engineer, with a love of economics. I thoroughly enjoy learning and analyzing how computing technologies work and how to correctly apply them to a system.
 
     In my experience, I have worked mostly on the operational side of computing, but I have also undertaken several personal projects and proof-of-concepts using multiple programming languages and technologies. Moving forward, my goal is to expand my knowledge to include HPC Schedulers like Slurm, and become familiar with the programming languages commonly used on HPC clusters. I am eager to learn how HPC clusters are utilized across different industries, by developers, and researchers.
