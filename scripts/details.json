@@ -1,9 +1,20 @@
+site_info:
+  bing:
+  google:
+  gtag:
+  keywords:
+  description: 
+
 personal_info:
   name: Rahim Khoja
-  email: rahim@example.com
+  email: rahim@khoja.ca
   linkedin: https://www.linkedin.com/in/rahimkhoja
   stackoverflow: https://stackoverflow.com/users/rahimkhoja
   github: https://github.com/rahimkhoja
+  hackerrank: https://www.hackerrank.com/profile/rahim9
+  leetcode: https://leetcode.com/u/rahimkhoja/
+  researchgate: 
+  about: 
 
 skills:
   programming_languages:
