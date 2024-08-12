@@ -84,15 +84,33 @@ if __name__ == "__main__":
         html_template = f.read()
 
     html_template = html_template.replace("<!-- Skills -->", skills_html)
-    html_template = html_template.replace("<!-- Name -->", name)
-    html_template = html_template.replace("<!-- Email -->", email)
-    html_template = html_template.replace("<!-- LinkedIn -->", linkedin)
-    html_template = html_template.replace("<!-- Stack -->", stackoverflow)
-    html_template = html_template.replace("<!-- GitHub -->", github)
-    html_template = html_template.replace("<!-- HackerRank -->", hackerrank)
-    html_template = html_template.replace("<!-- LeetCode -->", leetcode)
-    html_template = html_template.replace("<!-- ResearchGate -->", researchgate)
-    html_template = html_template.replace("<!-- About -->", about)
+    if name:
+        html_template = html_template.replace("<!-- Name -->", name)
+
+    if email:
+        html_template = html_template.replace("<!-- Email -->", email)
+
+    if linkedin:
+        html_template = html_template.replace("<!-- LinkedIn -->", linkedin)
+
+    if stackoverflow:
+        html_template = html_template.replace("<!-- Stack -->", stackoverflow)
+
+    if github:
+        html_template = html_template.replace("<!-- GitHub -->", github)
+
+    if hackerrank:
+        html_template = html_template.replace("<!-- HackerRank -->", hackerrank)
+
+    if leetcode:
+        html_template = html_template.replace("<!-- LeetCode -->", leetcode)
+
+    if researchgate:
+        html_template = html_template.replace("<!-- ResearchGate -->", researchgate)
+
+    if about:
+        html_template = html_template.replace("<!-- About -->", about)
+
 
     with open("docs/index2.html", "w") as f:
         f.write(html_template)
