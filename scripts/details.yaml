@@ -16,11 +16,11 @@ personal_info:
   leetcode: https://leetcode.com/u/rahimkhoja/
   researchgate: 
   about: |
-    A mildly eccentric, but mostly fantastic computer system engineer, with a love of economics. I thoroughly enjoy learning and analyzing how computing technologies work and how to correctly apply them to a system.
+    <p>A mildly eccentric, but mostly fantastic computer system engineer, with a love of economics. I thoroughly enjoy learning and analyzing how computing technologies work and how to correctly apply them to a system.</p>
 
-    In my experience, I have worked mostly on the operational side of computing, but I have also undertaken several personal projects and proof-of-concepts using multiple programming languages and technologies. Moving forward, my goal is to expand my knowledge to include HPC Schedulers like Slurm, and become familiar with the programming languages commonly used on HPC clusters. I am eager to learn how HPC clusters are utilized across different industries, by developers, and researchers.
+    <p>In my experience, I have worked mostly on the operational side of computing, but I have also undertaken several personal projects and proof-of-concepts using multiple programming languages and technologies. Moving forward, my goal is to expand my knowledge to include HPC Schedulers like Slurm, and become familiar with the programming languages commonly used on HPC clusters. I am eager to learn how HPC clusters are utilized across different industries, by developers, and researchers.</p>
 
-    In addition, I am fascinated by emerging technologies such as space technologies, deep learning technologies, cryptocurrency technologies, algorithmic trading technologies, and anything else based on HPC. My journey to learn and explore these technologies has just begun, and I am excited about what the future holds in this rapidly evolving field.
+    <p>In addition, I am fascinated by emerging technologies such as space technologies, deep learning technologies, cryptocurrency technologies, algorithmic trading technologies, and anything else based on HPC. My journey to learn and explore these technologies has just begun, and I am excited about what the future holds in this rapidly evolving field.</p>
 
 skills:
   programming_languages:
