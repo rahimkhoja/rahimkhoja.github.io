@@ -153,6 +153,7 @@ if __name__ == "__main__":
     leetcode = personal_info.get('leetcode')
     researchgate = personal_info.get('researchgate')
     resume = personal_info.get('resume')
+    typing_text = personal_info.get('typing_text')
     about = personal_info.get('about')
 
     # Assign the values site_info to variables
@@ -199,6 +200,14 @@ if __name__ == "__main__":
 
     if email:
         html_template = html_template.replace("<!-- Email -->", email)
+
+    if typing_text:
+        html_template = html_template.replace("<!-- Typing_Text -->", typing_text)
+
+    if resume:
+        html_template = html_template.replace("<!-- Resume -->", resume)
+    else:
+        html_template = remove_lines_containing_text(html_template, "<!-- Resume -->")
 
     if about:
         html_template = html_template.replace("<!-- About -->", about)
