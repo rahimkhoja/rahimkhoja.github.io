@@ -15,6 +15,7 @@ personal_info:
   hackerrank: https://www.hackerrank.com/profile/rahim9
   leetcode: https://leetcode.com/u/rahimkhoja/
   researchgate: 
+  resume: resume.pdf
   about: |
     <p>A mildly eccentric, but mostly fantastic computer system engineer, with a love of economics. I thoroughly enjoy learning and analyzing how computing technologies work and how to correctly apply them to a system.</p>
 
@@ -185,6 +186,3 @@ projects:
     description: A tool to analyze cryptocurrency trading data using Jupyter notebooks.
     link: https://github.com/rahimkhoja/crypto-trade-finder
 
-resume:
-  file_name: rahim_khoja_resume.pdf
-  link: /resume/rahim_khoja_resume.pdf
