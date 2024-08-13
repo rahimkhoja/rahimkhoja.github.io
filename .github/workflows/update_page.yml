@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: pip install requests && pip install pyyaml
 
-      - name: Generate Skills 
+      - name: Generate Portfolio Page
         run: python scripts/generate_portfolio.py
 
       - name: Deploy to GitHub Pages
