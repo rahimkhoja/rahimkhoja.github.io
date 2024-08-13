@@ -52,25 +52,25 @@ skills:
   operating_systems:
     - name: Linux
       link: https://www.linux.org/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linux.svg
+      icon: https://img.icons8.com/color/48/linux--v1.png
     - name: Ubuntu
       link: https://ubuntu.com/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/ubuntu.svg
+      icon: https://img.icons8.com/external-those-icons-flat-those-icons/48/external-Ubuntu-logos-and-brands-those-icons-flat-those-icons.png
     - name: Debian
       link: https://www.debian.org/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/debian.svg
+      icon: https://img.icons8.com/color/48/debian.png
     - name: Red Hat
       link: https://www.redhat.com/
       icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/redhat.svg
     - name: CentOS
       link: https://www.centos.org/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/centos.svg
+      icon: https://img.icons8.com/color/48/centos.png
     - name: Arch Linux
       link: https://archlinux.org/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/archlinux.svg
+      icon: https://img.icons8.com/color/48/arch-linux.png
     - name: Gentoo
       link: https://www.gentoo.org/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gentoo.svg
+      icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKtHy9_NPgjOXRxRFWieQiC7TAVdfjLHsRBw&s
     - name: Rocky Linux
       link: https://rockylinux.org/
       icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/rockylinux.svg
@@ -79,19 +79,19 @@ skills:
       icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/slackware.svg
     - name: Windows 
       link: https://www.microsoft.com/en-us/windows/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/windows.svg
+      icon: https://img.icons8.com/fluency/48/windows-10.png
     - name: FreeBSD
       link: https://www.freebsd.org/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/freebsd.svg
+      icon: https://img.icons8.com/color/48/free-bsd.png
     - name: AmigaOS
       link: http://www.amigaos.net/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/amigaos.svg
+      icon: https://img.icons8.com/color/48/commodore-amiga.png
     - name: SGI IRIX
       link: https://en.wikipedia.org/wiki/IRIX
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/sgi.svg
+      icon: https://ih1.redbubble.net/image.2658386181.9667/st,small,507x507-pad,600x600,f8f8f8.jpg
     - name: Solaris
       link: https://www.oracle.com/solaris/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/solaris.svg
+      icon: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4ad36332-03b9-4804-aad7-acc8455a1109/d4731ca-b853d016-5b51-4eb1-9d6c-eee3622b9b72.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRhZDM2MzMyLTAzYjktNDgwNC1hYWQ3LWFjYzg0NTVhMTEwOVwvZDQ3MzFjYS1iODUzZDAxNi01YjUxLTRlYjEtOWQ2Yy1lZWUzNjIyYjliNzIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.nPEJWqHiRYPfeh1kCIYaP9ZuhOGjNv8ndBTsb82Lfpg
 
   infrastructure_and_cloud_technologies:
     - name: Docker
