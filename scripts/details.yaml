@@ -47,7 +47,7 @@ skills:
       icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/nodedotjs.svg
     - name: Bash
       link: https://www.gnu.org/software/bash/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gnubash.svg
+      icon: https://img.icons8.com/fluency/48/bash.png
 
   operating_systems:
     - name: Linux
