@@ -155,6 +155,8 @@ if __name__ == "__main__":
     resume = personal_info.get('resume')
     typing_text = personal_info.get('typing_text')
     about = personal_info.get('about')
+    repo_list = personal_info.get('repo_list')
+    
 
     # Assign the values site_info to variables
     bing = site_info.get('bing')
@@ -170,11 +172,11 @@ if __name__ == "__main__":
         html_template = f.read()
 
     # List of GitHub usernames
-    usernames = ["rahimkhoja", "ImprobabilityLabs"]
+    #repo_list = ["rahimkhoja", "ImprobabilityLabs"]
 
     # Fetch repos and save info
     all_repos = []
-    for username in usernames:
+    for username in repo_list:
         repos = get_repos(username)
         for repo in repos:
             if repo["description"]:  # Skip repos without descriptions
@@ -191,10 +193,28 @@ if __name__ == "__main__":
                 all_repos.append(repo_info)
 
     repos_html = generate_repo_html(all_repos)
-   
-    html_template = html_template.replace("<!-- Skills -->", skills_html)
-    html_template = html_template.replace("<!-- Repos -->", repos_html)
     
+    # Site Info
+    if page_title:
+        html_template = html_template.replace("<!-- Page_Title -->", page_title)
+
+    if page_description:
+        html_template = html_template.replace("<!-- Page_Description -->", page_description)
+
+    if meta_keywords:
+        html_template = html_template.replace("<!-- Keywords -->", meta_keywords)
+
+    if gtag:
+        html_template = html_template.replace("<!-- Gtag -->", gtag)
+
+    if google:
+        html_template = html_template.replace("<!-- Google -->", google)
+
+    if bing:
+        html_template = html_template.replace("<!-- Bing -->", bing)    
+
+
+    # Personal Info
     if name:
         html_template = html_template.replace("<!-- Name -->", name)
 
@@ -243,7 +263,11 @@ if __name__ == "__main__":
         html_template = remove_lines_containing_text(html_template, "<!-- ResearchGate -->")
         
 
+    # Skills Section
+    html_template = html_template.replace("<!-- Skills -->", skills_html)
 
+    # Repositories Section
+    html_template = html_template.replace("<!-- Repos -->", repos_html)
 
     with open("docs/index2.html", "w") as f:
         f.write(html_template)
