@@ -90,22 +90,35 @@ skills:
   infrastructure_and_cloud_technologies:
     - name: Docker
       link: https://www.docker.com/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/docker.svg
+      icon: https://img.icons8.com/color/48/docker.png
     - name: Kubernetes
       link: https://kubernetes.io/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/kubernetes.svg
-    - name: Amazon Web Services (AWS)
+      icon: https://img.icons8.com/color/48/kubernetes.png
+    - name: Amazon Web Services
       link: https://aws.amazon.com/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/amazonaws.svg
+      icon: https://img.icons8.com/color/48/amazon-web-services.png
     - name: Microsoft Azure
       link: https://azure.microsoft.com/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/microsoftazure.svg
-    - name: Google Cloud Platform (GCP)
+      icon: https://img.icons8.com/fluency/48/azure-1.png
+    - name: Google Cloud Platform
       link: https://cloud.google.com/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/googlecloud.svg
+      icon: https://img.icons8.com/color/48/google-compute-engine.png
     - name: VMware
       link: https://www.vmware.com/
-      icon: https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/vmware.svg
+      icon: https://img.icons8.com/color/48/old-vmware-logo.png
+    - name: Proxmox
+      link: https://www.proxmox.com/en/
+      icon: https://camo.githubusercontent.com/cb6c50486cf76c4a9a9a4c7811f8bf97f59f7512d11119a386021086997cae0e/68747470733a2f2f7777772e70726f786d6f782e636f6d2f696d616765732f70726f786d6f782f50726f786d6f785f73796d626f6c5f7374616e646172645f6865782e706e67
+    - name: Slurm
+      link: https://slurm.schedmd.com/
+      icon: https://upload.wikimedia.org/wikipedia/commons/3/3a/Slurm_logo.svg      
+    - name: XenServer
+      link: https://www.xenserver.com/
+      icon: https://icon2.cleanpng.com/20180802/ff/59c454b019e02130d14f26f368383ec7.webp   
+    - name: KVM
+      link: https://linux-kvm.org/page/Main_Page
+      icon: https://zedt.eu/storage/kvm-logo-square.png
+
 
   libraries_and_frameworks:
     - name: Flask
