@@ -219,7 +219,7 @@ if __name__ == "__main__":
         html_template = html_template.replace("<!-- Email -->", email)
 
     if typing_text:
-        html_template = html_template.replace("<!-- Typing_Text -->", str(typing_text))
+        html_template = html_template.replace("<!-- Typing_Text -->", str(typing_text).replace("'", '"'))
 
     if resume:
         html_template = html_template.replace("<!-- Resume -->", resume)
