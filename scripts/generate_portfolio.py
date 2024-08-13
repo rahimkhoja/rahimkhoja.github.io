@@ -61,9 +61,6 @@ def generate_repo_html(all_repos):
     
         html_output += repo_html
 
-    # Print the final HTML output
-    print(html_output)
-
     return html_output
 
 
@@ -269,5 +266,5 @@ if __name__ == "__main__":
     # Repositories Section
     html_template = html_template.replace("<!-- Repos -->", repos_html)
 
-    with open("docs/index2.html", "w") as f:
+    with open("docs/index.html", "w") as f:
         f.write(html_template)
