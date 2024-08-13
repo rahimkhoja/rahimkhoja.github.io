@@ -16,7 +16,7 @@ def generate_repo_html(all_repos):
         tags_html = ""
         for tag in repo["tags"]:
             color_class = color_classes[color_index % len(color_classes)]
-            tags_html += f'          <a title="" href="" class="{color_class}">{tag}</a>\n'
+            tags_html += f'                  <a title="" href="" class="{color_class}">{tag}</a>\n'
             color_index += 1
 
         repo_html = f"""
@@ -53,7 +53,7 @@ def generate_repo_html(all_repos):
     
                 <div class="tags mt-3">
                   <p>
-        {tags_html}
+{tags_html}
                   </p>
                 </div>
               </div>
@@ -106,11 +106,11 @@ def generate_html(skills):
         
         for skill in items:
             section += f"""
-              <figure class="item" style="display:inline-block;">
+              <figure class="item" style="display:inline-block; text-align:center; margin: 0;">
                 <a href="{skill['link']}" target="_blank" rel="noreferrer">
-                  <img src="{skill['icon']}" alt="{skill['name']}" width="40" height="40" />
+                  <img width="48" height="48" src="{skill['icon']}" alt="{skill['name']}" style="display: block; margin: 0 auto;"/>
                 </a>
-                <figcaption style="text-align:center;">{skill['name']}</figcaption>
+                <figcaption style="text-align:center; margin-top: 5px;">{skill['name']}</figcaption>
               </figure>
               &nbsp; &nbsp;"""
         
