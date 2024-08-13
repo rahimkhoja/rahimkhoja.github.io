@@ -142,7 +142,6 @@ if __name__ == "__main__":
     site_info = data['site_info']
     personal_info = data['personal_info']
     skills = data['skills']
-    resume = data['resume']
     projects = data['projects']
 
     name = personal_info.get('name')
@@ -153,7 +152,16 @@ if __name__ == "__main__":
     hackerrank = personal_info.get('hackerrank')
     leetcode = personal_info.get('leetcode')
     researchgate = personal_info.get('researchgate')
+    resume = personal_info.get('resume')
     about = personal_info.get('about')
+
+    # Assign the values site_info to variables
+    bing = site_info.get('bing')
+    google = site_info.get('google')
+    gtag = site_info.get('gtag')
+    page_title = site_info.get('page_title')
+    meta_keywords = site_info.get('meta_keywords')
+    page_description = site_info.get('page_description')
 
     skills_html = generate_html(skills)
 
