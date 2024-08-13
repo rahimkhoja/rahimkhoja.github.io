@@ -24,16 +24,8 @@ jobs:
       - name: Install dependencies
         run: pip install requests && pip install pyyaml
 
-      - name: Fetch repositories
-        run: python scripts/fetch_repos.py
-
       - name: Generate Skills 
-        run: python scripts/generate_skills.py
-
- #     - name: Generate HTML page
- #       env:
- #         GROQ_KEY: ${{ secrets.GROQ_KEY }}
- #       run: python scripts/generate_page.py
+        run: python scripts/generate_portfolio.py
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
