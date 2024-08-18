@@ -103,7 +103,7 @@ def generate_html(skills):
         
         for skill in items:
             section += f"""
-              <figure class="item" style="display:inline-block; text-align:center; margin: 0;">
+              <figure class="item" style="display:inline-block; text-align:center; margin: 0; margin-top: 5px;">
                 <a href="{skill['link']}" target="_blank" rel="noreferrer">
                   <img width="48" height="48" src="{skill['icon']}" alt="{skill['name']}" style="display: block; margin: 0 auto;"/>
                 </a>
