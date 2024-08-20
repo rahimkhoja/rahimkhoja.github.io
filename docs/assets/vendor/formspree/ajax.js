@@ -1,4 +1,3 @@
-<script>
   var form = document.getElementById("ajax-form");
   
   async function handleSubmit(event) {
@@ -40,4 +39,3 @@
   }
   
   form.addEventListener("submit", handleSubmit);
-</script>
