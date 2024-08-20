@@ -1,5 +1,6 @@
 import yaml
 import requests
+from datetime import datetime
 
 # Get repos for each user
 def get_repos(username):
@@ -268,3 +269,21 @@ if __name__ == "__main__":
 
     with open("docs/index.html", "w") as f:
         f.write(html_template)
+
+    # Get the current date in YYYY-MM-DD format
+    current_date = datetime.now().strftime('%Y-%m-%d')
+
+    # Create the sitemap content
+    sitemap_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+       <url>
+          <loc>https://rahimkhoja.github.io/</loc>
+          <lastmod>{current_date}</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>1.0</priority>
+       </url>
+    </urlset>
+    """
+
+    with open("docs/sitemap.xml", "w") as f:
+        f.write(sitemap_content)
