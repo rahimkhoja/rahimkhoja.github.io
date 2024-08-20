@@ -275,15 +275,14 @@ if __name__ == "__main__":
 
     # Create the sitemap content
     sitemap_content = f"""<?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-       <url>
-          <loc>https://rahimkhoja.github.io/</loc>
-          <lastmod>{current_date}</lastmod>
-          <changefreq>monthly</changefreq>
-          <priority>1.0</priority>
-       </url>
-    </urlset>
-    """
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://rahimkhoja.github.io/</loc>
+      <lastmod>{current_date}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+   </url>
+</urlset>"""
 
     with open("docs/sitemap.xml", "w") as f:
         f.write(sitemap_content)
